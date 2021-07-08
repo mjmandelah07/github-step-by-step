@@ -1,0 +1,33 @@
+       STEP BY STEP GUIDE TO GIT
+
+git pull origin master -                    To update our repository with the changes that may have happen on the remote repository down to our local repository to make sure we are up to date.
+git push origin master -                    To push our files to github
+mate/notepad filename -                     To open an editor, either textmate or notepad 
+git commit -am "initial message " -         To add and commit message
+tracked files -                             Are files that were in the last snapshots, they can be unmodified, modified or staged
+untracked files -                           Are files in your working directory that were not in your last snapshot and are not in your staging area
+git ls-files -                              List all the files that are tracked by git
+git status -                                Command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
+git commit -                                Is used to create a snapshot of the staged changes along a timeline of a Git projects history.
+git add =                                   Adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit.
+git add -A  =                               To update, moved or update files in git.
+git log =                                   To display commit history
+git log --since='3 days'                    To display the commit that has happended since three days ago
+git diff                                    Command is often used along with git status and git log to analyze the current state of a Git repo.
+git difftool                                Git command that allows you to compare and edit files between revisions using common diff tools. git difftool is a frontend to git diff and accepts the same options and arguments.
+git diff HEAD                               Will show all changes to tracked files. If you have all changes staged for commit, then both commands will output the same. origin refers to the source repository from where it was cloned. HEAD is a reference to the last commit in the currently checked-out branch.
+git difftool HEAD                           Visual difftool
+git log --oneline                           Display the history of commit that has happened so far
+git diff reference1  reference2             Specify two commits to compare
+git diff HEAD HEAD^                         To compare between the last commits on branch and commit prior to the last commit 
+git difftool HEAD HEAD^                     Visually see the difference between the last commit on branch and commit prior to the last commit 
+git branch -a                               Listing existing branches (-a will list both the local and remote branches)
+git branch branchname                       Create a new branch 
+git checkout branchname                     To switch branches to the specified branch name 
+git branch -m old branchname newbranchname   To rename branches or move 
+git branch -d branchname                    To delete a branch
+git branch                                  To list all our global branches 
+git branch -a                               To list all branches including local branches
+git checkout -b branchname                  Will create a new branch name and switch to the branch
+git log --oneline                           List all our commit history
+git mergetool                               To revoke a visual difftool
